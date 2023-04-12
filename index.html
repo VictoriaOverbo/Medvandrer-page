@@ -38,33 +38,87 @@
     </nav>
     <section id="profile">
         <div class="section_pic-container">
-            <img src="./assets/IMG_4250.jpg" alt="profile-picture">
+            <img 
+            src="./assets/IMG_4250.jpg" 
+            alt="profile-picture"
+            class="profilepicture"
+            />
         </div>
         <div class="section_text">
             <p class="section_text_p1">Hello I'm</p>
             <h1 class="title">Victoria Beatrice Øverbø</h1>
             <p class="section_text_p2">Frontend Developer</p>
-            <div class="btn-container"></div>
-            <button class="btn btn-color-2" onclick="window.open('./assets/VBØ-CV.pdf')">
-                Download CV</button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact</button>
-                <div id="sosial-container"> 
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/VBØ-CV.pdf')">
+                    Download CV
+                </button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                    Contact
+                </button>
+            </div>
+                <div id="sosials-container"> 
                     <img 
                     src="./assets/LinkedIn.png" 
                     alt="MyLinkedInPage" 
                     class="icon" 
                     onclick="location.href=
-                    'https://www.linkedin.com/in/victoria-beatrice-%C3%B8-7a86751b6/'">
-                <img 
-                src="./assets/Github.png" 
-                alt="MyGuthubPage" 
-                class="icon" 
-                onclick="location.href=
-                'https://github.com/VictoriaOverbo'">
+                    'https://www.linkedin.com/in/victoria-beatrice-%C3%B8-7a86751b6/'"/>
+                    <img 
+                    src="./assets/Github.png" 
+                    alt="MyGuthubPage" 
+                    class="icon" 
+                    onclick="location.href=
+                    'https://github.com/VictoriaOverbo'"/>
             
             </div>
         </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img 
+                src="./" 
+                alt="profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./"
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>Frontend develeopment</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./"
+                        alt="education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Frontend develeopment</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perspiciatis, ad quidem nemo voluptatem sequi nihil est blanditiis rerum corrupti! Itaque quam dolores tempora numquam veniam magni quisquam consectetur quo!</p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"/>
     </section>
     <script src="script.js"></script>
 </body>
