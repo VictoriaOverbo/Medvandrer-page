@@ -21,19 +21,19 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Victoria  Øverbø</div>
+        <div class="logo">Victoria Beatrice Øverbø</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
     </nav>
     <section id="profile">
@@ -47,39 +47,17 @@
         <div class="section_text">
             <p class="section_text_p1">Hello I'm</p>
             <h1 class="title">Victoria Beatrice Øverbø</h1>
-            <p class="section_text_p2">Frontend Developer</p>
-            <div class="btn-container">
-                <button 
-                class="btn btn-color-2" 
-                onclick="window.open('./assets/VBØ-CV.pdf')">
-                    Download CV
-                </button>
-                <button 
-                class="btn btn-color-1" 
-                onclick="location.href='./#contact'">
-                    Contact
-                </button>
-            </div>
-                <div id="sosials-container"> 
-                    <img 
-                    src="./assets/LinkedIn.png" 
-                    alt="MyLinkedInPage" 
-                    class="icon" 
-                    onclick="location.href=
-                    'https://www.linkedin.com/in/victoria-beatrice-%C3%B8-7a86751b6/'"/>
-                    <img 
-                    src="./assets/Github.png" 
-                    alt="MyGuthubPage" 
-                    class="icon" 
-                    onclick="location.href=
-                    'https://github.com/VictoriaOverbo'"/>
-            
-            </div>
+            <p class="section_text_p2">JavaScript Consultant</p>
         </div>
+
+        <img 
+        src="./assets/arrow1.png" 
+        alt="Arrow icon"
+        class="icon arrow-dark"
+        onclick="location.href='./#about'"/>
     </section>
     <section id="about">
-        <p class="section_text_p1">Get to know more</p>
-        <h1 class="title">About Me</h1>
+        <h1 class="title-dark">About Me</h1>
         <div class="section-container">
             <div class="section_pic-container">
                 <img 
@@ -88,40 +66,31 @@
                 class="about-pic"
                 />
             </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                        src="./"
-                        alt="experience icon"
-                        class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>Frontend develeopment</p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                        src="./"
-                        alt="education icon"
-                        class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>Frontend develeopment</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perspiciatis, ad quidem nemo voluptatem sequi nihil est blanditiis rerum corrupti! Itaque quam dolores tempora numquam veniam magni quisquam consectetur quo!</p>
+            <div class="content">
+                <p class="about-details-container-dark">Hello! My name is Victoria, and I'm a positive and creative person who has realized that tech is where I'm supposed to be. I love problem-solving, learning new things, and I'm a great team player. 
+                </p>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/VBØ-CV.pdf')">
+                        Download CV
+                    </button>
+                    <button 
+                    class="btn btn-color-2" 
+                    onclick="location.href='./#contact'">
+                        Contact
+                    </button>
                 </div>
             </div>
         </div>
         <img 
-        src="./assets/arrow.png" 
+        src="./assets/arrow1.png" 
         alt="Arrow icon"
-        class="icon arrow"
+        class="icon arrow-dark"
         onclick="location.href='./#experience'"/>
     </section>
     <section id="experience">
-        <p class="section_text_p1">Explore My</p>
+        
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-container">
@@ -136,7 +105,7 @@
                         />
                         <div>
                             <h3>HTML</h3>
-                            <p>Experienced</p>
+                            <p>Basic</p>
                         </div>
                     </article>
                     <article>
@@ -147,7 +116,7 @@
                         />
                         <div>
                             <h3>SASS</h3>
-                            <p>Experienced</p>
+                            <p>Basic</p>
                         </div>
                     </article>
                     <article>
@@ -227,22 +196,72 @@
                    
                 </div>
             </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Other</h2>
+                <div class="article-container">
+                    <article>
+                        <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Scrum</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Express JS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Git</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                   
+                </div>
+            </div>
         </div>
         </div>
         <img 
-        src="./assets/arrow.png" 
+        src="./assets/arrow1.png" 
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"/>
     </section>
     <section id="projects">
-        <p class="section_text_p1"></p>
-        <h1 class="title"></h1>
-        <div class="experience-details-container">
-            <div class="details-container color-container">
+        <p class="section_text_p1-dark">Explore</p>
+        <h1 class="title-dark">Projects</h1>
+        <div class="experience-details-container-dark">
+            <div class="details-container tasky-project">
                 <div class="article-container">
                     <img
-                    src="./"
+                    src="./assets/Tasky.png"
                     alt="project1"
                     class="project-img"
                     />
@@ -258,10 +277,10 @@
                     
                 </div>
             </div>
-            <div class="details-container color-container">
+            <div class="details-container medvandrer-project">
                 <div class="article-container">
                     <img
-                    src="./"
+                    src="./assets/Medvandrer.png"
                     alt="project1"
                     class="project-img"
                     />
@@ -279,11 +298,53 @@
             </div>
         </div>
         <img 
-        src="./assets/arrow.png" 
+        src="./assets/arrow1.png" 
         alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"/>
+        class="icon arrow-dark"
+        onclick="location.href='./#contact'"/>
     </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <p>If you are interested in a talk or having me on your project, send me an email.</p>
+        <div class="contact-info-upper-container">
+            <a class="a-email" href="mailto:overbo.victoria@gmail.com">
+            <div class="contact-info-container">
+                <img
+                src="assets/email.png"
+                alt="email icon"
+                class="contact-icon"
+                />     
+                <p>Overbo.victoria@gmail.com</p>
+            </div>
+        </a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="location">
+                <h3>LOCATION</h3>
+                <p>Storo, Oslo</p>
+            </div>
+            <div class="around">
+                <h3>AROUND THE WEB</h3>
+                    <p id="sosials-container"> 
+                    <img 
+                    src="./assets/LinkedIn.png" 
+                    alt="MyLinkedInPage" 
+                    class="icon" 
+                    onclick="location.href=
+                    'https://www.linkedin.com/in/victoria-beatrice-%C3%B8-7a86751b6/'"/>
+                    <img 
+                    src="./assets/Github.png" 
+                    alt="MyGuthubPage" 
+                    class="icon" 
+                    onclick="location.href=
+                    'https://github.com/VictoriaOverbo'"/>
+            </p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

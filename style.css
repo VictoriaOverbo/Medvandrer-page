@@ -17,6 +17,7 @@ html {
 
 p {
     color: rgb(85, 85, 85);
+    
 }
 
 /* Transition */
@@ -47,10 +48,11 @@ a {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
+    z-index: -1;
 }
 
 a:hover {
-    color: gray;
+    color: rgb(10, 10, 10);
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
@@ -146,15 +148,23 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: 100vh;
     margin: 0 10rem;
     min-height: fit-content;
+    z-index: -10;
 }
 
 .section-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 4rem;
-    height: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -169,12 +179,7 @@ section {
 
 .section_pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+    width: 500px;
 }
 
 .profilepicture {
@@ -196,6 +201,11 @@ section {
 .section_text_p1 {
     text-align: center;
 }
+
+.section_text_p1-dark {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
 .section_text_p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -204,12 +214,20 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    margin: 0px 0px 50px 30px;
+}
+
+.title-dark {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0px 0px 50px 30px;
+    color: white;
 }
 
 #sosials-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin: 1rem;
     gap: 1rem;
 }
 
@@ -227,6 +245,11 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 10px;
+}
+
+button {
+    margin: 0 10px;
 }
 
 .btn {
@@ -244,8 +267,9 @@ section {
 }
 
 .btn-color-2 {
-    background: none;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: rgb(179, 178, 178) 0.1rem solid;
+    background-color: rgb(108, 108, 108);
+    color: white;
 }
 
 .btn-color-1:hover {
@@ -265,31 +289,51 @@ section {
 
 #about {
     position: relative;
+    background-color: rgb(157, 157, 157);
+    width: 100%;
+    margin: auto 0;
 }
 
 .about-container {
     gap: 2rem;
     display: flex;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
 }
 
 .about-details-container {
     justify-content: center;
     flex-direction: column;
-    display: flex;
+}
+
+.about-details-container-dark {
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 20px;
+    width: 500px;
+    text-align: center;
 }
 
 .about-pic {
     border-radius: 2rem;
-    height: 350px;
+    object-fit:cover;
+    height: 250px;
+    width: 500px;
 }
 
 .arrow {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
-    transform: rotate(90deg);
+    width: 40px;
+    height: 60px;
+}
+
+.arrow-dark {
+    position: absolute;
+    right: 2rem;
+    bottom: 2.5rem;
+    width: 40px;
+    height: 60px;
 }
 
 .details-container {
@@ -300,7 +344,6 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    
 }
 
 /*experience*/
@@ -320,6 +363,12 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.experience-details-container-dark {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .article-container {
@@ -346,6 +395,11 @@ article .icon {
 
 #projects {
     position: relative;
+    background-color: rgb(157, 157, 157);
+    width: 100%;
+    height: 700px;
+    margin: auto 0;
+    z-index: 1;
 }
 
 .color-container {
@@ -356,8 +410,19 @@ article .icon {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 150px;
+}
+
+.medvandrer-project {
+    max-width: 300px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.tasky-project {
+    max-width: 300px;
+    height: 400px;
+    margin: 0 auto;
 }
 
 .project-title {
@@ -368,4 +433,65 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+}
+
+.text-container {
+   width: 300px;
+   height: 300px;
+}
+
+/*Contact*/
+.contact-icon {
+    height: 2rem;
+    border-radius: 20%;
+    
+}
+
+.a-email {
+    color: rgb(85, 85, 85);
+    text-decoration: underline;
+    text-underline-offset: 1.5rem;
+    text-decoration-color: rgb(181, 181, 181);
+    z-index: 1;
+    
+}
+
+.contact-info-container {
+    text-align: center;
+    margin: 100px auto;
+    border: 1px solid rgb(85, 85, 85);
+    padding: 50px 30px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+/*Footer*/
+
+footer {
+    position: relative;
+    background-color: rgb(157, 157, 157);
+    width: 100%;
+    margin: auto 0;
+    z-index: 1;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.location {
+    width: 30%;
+    margin-right: 20px;
+    text-align: center;
+    padding: 50px;
+}
+
+.around {
+    width: 30%;
+    margin-left: 20px;
+    text-align: center;
+    padding: 50px;
 }
