@@ -17,7 +17,6 @@ html {
 
 p {
     color: rgb(85, 85, 85);
-    
 }
 
 /* Transition */
@@ -147,11 +146,7 @@ a:hover {
 /* Section */
 
 section {
-    padding-top: 4vh;
-    height: 100vh;
-    margin: 0 10rem;
-    min-height: fit-content;
-    z-index: -10;
+    min-height: 500px;
 }
 
 .section-container {
@@ -160,6 +155,7 @@ section {
     align-items: center;
     gap: 4rem;
     margin: 0 auto;
+    width: 700px;
 }
 
 .content {
@@ -173,8 +169,7 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    margin-bottom: 0px;
 }
 
 .section_pic-container {
@@ -214,14 +209,15 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    margin: 0px 0px 50px 30px;
+    margin: 20px;
 }
 
 .title-dark {
     font-size: 3rem;
     text-align: center;
-    margin: 0px 0px 50px 30px;
+    padding: 20px;
     color: white;
+    background-color: rgb(157, 157, 157);
 }
 
 #sosials-container {
@@ -291,12 +287,15 @@ button {
     position: relative;
     background-color: rgb(157, 157, 157);
     width: 100%;
+    height: 1100px;
     margin: auto 0;
 }
 
 .about-container {
     gap: 2rem;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .about-details-container {
@@ -309,7 +308,6 @@ button {
     flex-direction: column;
     color: white;
     margin-bottom: 20px;
-    width: 500px;
     text-align: center;
 }
 
@@ -318,11 +316,18 @@ button {
     object-fit:cover;
     height: 250px;
     width: 500px;
+    margin: 0 auto;
+}
+
+.content-text {
+    color: white;
+    text-align: center;
+    margin: 20px
 }
 
 .arrow {
     position: absolute;
-    right: -5rem;
+    right: 2rem;
     bottom: 2.5rem;
     width: 40px;
     height: 60px;
@@ -344,12 +349,14 @@ button {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    max-width: 200px;
 }
 
 /*experience*/
 
 #experience {
     position: relative;
+    margin-bottom: 50px;
 }
 
 .experience-sub-title {
@@ -363,6 +370,7 @@ button {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 10px 20px
 }
 
 .experience-details-container-dark {
@@ -376,7 +384,7 @@ button {
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 2rem;
     justify-content: space-around;
     
 }
@@ -441,6 +449,10 @@ article .icon {
 }
 
 /*Contact*/
+#contact {
+    height: 600px;
+}
+
 .contact-icon {
     height: 2rem;
     border-radius: 20%;
@@ -463,6 +475,10 @@ article .icon {
     padding: 50px 30px;
     border-radius: 10px;
     max-width: 500px;
+}
+
+.p-contact {
+    text-align: center;
 }
 
 /*Footer*/
