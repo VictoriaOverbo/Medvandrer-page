@@ -179,6 +179,7 @@ section {
 .section_pic-container {
     display: flex;
     width: 500px;
+    
 }
 
 .profilepicture {
@@ -187,6 +188,9 @@ section {
     height: 300px;
     object-fit: cover;
     filter: grayscale(100%);
+    margin: auto;
+    
+    
 }
 
 .section_text {
